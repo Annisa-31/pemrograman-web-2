@@ -1,18 +1,11 @@
-<!DOCTYPE html>
 <html>
-<head>
-    <title>Penggunaan FOR</title>
-</head>
-<body>
-
-<?php
-
-for ($bil = 1; $bil <= 24; $bil++) {
-
-    echo $bil . "<br>";
-}
-
-?>
-
-</body>
+    <head>
+        <title>Penggunaan For</title>
+    </head>
+    <body>
+        <?php
+            For ($bil = 1; $bil <25; $bil++)
+                Print("$bil <br>\n");
+        ?>
+    </body>
 </html>
