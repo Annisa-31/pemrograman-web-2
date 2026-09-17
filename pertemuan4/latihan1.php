@@ -1,24 +1,19 @@
 <?php
-
-$brush_price = 5000;
+$brush_price = 5;
 $counter = 10;
 
-echo "<table border='1' cellpadding='8'>";
-echo "<tr>
-        <th>Quantity</th>
-        <th>Price</th>
-      </tr>";
+echo "<table border=\"1\" align=\"center\">";
+echo "<tr><th>Quantity</th>";
+echo "<th>Price</th></tr>";
 
-while ($counter <= 100) {
-
-    echo "<tr>";
-    echo "<td>$counter</td>";
-    echo "<td>Rp " . number_format($brush_price * $counter,0,",",".") . "</td>";
-    echo "</tr>";
-
-    $counter += 10;
-}
-
-echo "</table>";
-
+while ( $counter <= 100 ) {
+    echo "<tr><td>";
+    echo $counter;
+    echo "</td><td>";
+    echo $brush_price * $counter;
+    echo "</td></tr>";
+    $counter = $counter + 10;
+    }
+    echo "</table>";
+    
 ?>
