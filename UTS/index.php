@@ -11,7 +11,7 @@ if (!$koneksi) {
     die("Koneksi ke database gagal: " . mysqli_connect_error());
 }
 
-// TAHAP 3 & 4: TANGKAP DATA FORM, OLAH, DAN SIMPAN (INSERT) KE MYSQL
+// TAHAP 3 & 4:PROSES TANGKAP DATA FORM, OLAH, DAN SIMPAN (INSERT) KE MYSQL
 if (isset($_POST['simpan'])) {
     $tgl_input      = $_POST['tgl_input'];
     $kode           = strtoupper($_POST['kode']);
